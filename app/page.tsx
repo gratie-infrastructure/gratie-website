@@ -1,5 +1,7 @@
 "use client"
 
+
+import { ThemeProvider } from '@mui/material/styles';
 import Image from 'next/image'
 import styles from './page.module.css'
 import Container from '@mui/material/Container';
