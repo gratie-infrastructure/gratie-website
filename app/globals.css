@@ -276,6 +276,11 @@ p{
 .landing-tab .css-gen84r-MuiTabs-indicator{
   display: none !important;
 }
+
+.MuiTabs-indicator{
+  display: none !important;
+}
+
 .section-link{
   color: #54CD0A !important;
   text-decoration: underline !important;
