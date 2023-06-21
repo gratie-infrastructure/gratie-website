@@ -194,7 +194,7 @@ function ResponsiveAppBar() {
                 sx={{ display: "flex", margin: "auto", paddingX: 2, pr: 10 }}
               >
                 {/* <ToggleButtonNotEmpty /> */}
-                <Button variant="contained" className="navbar-green-btn">
+                <Button href="https://app.gratie.xyz/home" variant="contained" className="navbar-green-btn">
                   Get Started
                 </Button>
               </Box>

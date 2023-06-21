@@ -28,7 +28,7 @@ export default function Working() {
       </Grid>
       <div
         className="image-container"
-        style={{ marginLeft: "-402px", position: "relative" }}
+        style={{ marginLeft: "-380px", position: "relative" }}
       >
          <Image
       priority

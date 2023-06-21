@@ -17,7 +17,7 @@ export default function CoreValue(){
             </Typography>
             <div className='w-100% relative'>
               
-              <img width={'125%'} style={{marginLeft:"-110px"}} src='/images/process.png' alt='' />
+              <img width={'100%'}  src='/images/process.png' alt='' />
             </div>
           
         </Grid>
