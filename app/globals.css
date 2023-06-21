@@ -68,7 +68,7 @@ body {
     rgb(var(--background-start-rgb));
     ; */
 
-    background: #0E1803 !important;
+    background: #0F160F !important;
 }
 
 h1 {
@@ -290,7 +290,8 @@ p{
   color: #fff !important;
 }
 .grid-card{
-  width: fit-content !important;
+  width: 300px !important;
+  
   background: #000000 !important;
   border-radius: 27.3085px !important;
 }
