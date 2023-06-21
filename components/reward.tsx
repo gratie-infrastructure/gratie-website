@@ -30,7 +30,7 @@ export default function Reward() {
         </Typography>
         <br />
         <br />
-        <Link href="https://gratie-frontend-fc145e.spheron.app/home/" passHref>
+        <Link href="https://app.gratie.xyz/home" passHref>
           <Button
             variant="contained"
             className="sm-green-btn"
