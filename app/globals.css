@@ -68,7 +68,7 @@ body {
     rgb(var(--background-start-rgb));
     ; */
 
-    background: #0E1803;
+    background: #0E1803 !important;
 }
 
 h1 {

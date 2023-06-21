@@ -34,7 +34,7 @@ export default function Reward() {
           <Button
             variant="contained"
             className="sm-green-btn"
-            style={{ width: "136px", height: "36px" }}
+            style={{ width: "147px", height: "36px" }}
           >
             Try for Free
           </Button>
