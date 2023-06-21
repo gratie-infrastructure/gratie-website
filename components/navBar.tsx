@@ -178,7 +178,7 @@ function ResponsiveAppBar() {
                         mt: 3,
                       }}
                       style={{
-                        fontFamily: "DM Sans",
+                        fontFamily: "DM Sans !important",
                         fontSize: "24px",
                         fontWeight: "400",
                         textTransform: "capitalize",

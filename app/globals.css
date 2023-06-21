@@ -59,7 +59,7 @@ body {
 
 body {
   /* font-family: 'Book antique' !important; */
-  color: #fff;
+  color: #fff ;
   /* background: linear-gradient(
       to bottom,
       transparent,
@@ -72,7 +72,7 @@ body {
 }
 
 h1 {
-  font-size: 60px;
+  font-size: 60px !important;
   color: #fff;
   opacity: 100%;
   font-family: var(--font-B);
@@ -106,10 +106,10 @@ p{
 }
 
 .navbar{
-  background: #000;
-  box-shadow: none;
-  align-items: center;
-  position: fixed;
+  background: #000 !important ;
+  box-shadow: none !important;
+  align-items: center !important;
+  position: fixed !important;
 }
 
 .wallet-adapter-button {
@@ -188,127 +188,129 @@ p{
 }
 
 .sm-green-btn{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 9.03671px 27.1101px;
-  gap: 7.53px;
-  position: absolute;
-  width: 177.22px;
-  height: 47.07px;
-  background: #32D94B;
-  border-radius: 70.7876px;
-  border: 1px solid #32D94B;
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: center !important;
+  align-items: center!important;
+  padding: 9.03671px 27.1101px !important;
+  gap: 7.53px !important;
+  position: absolute !important ;
+  width: 177.22px !important;
+  height: 47.07px !important;
+  background: #32D94B !important;
+  border-radius: 70.7876px !important;
+  border: 1px solid #32D94B !important;
 }
 .sm-green-btn:hover{
-  background: transparent;
+  background: transparent important;
 }
 .navbar-green-btn{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 9.03671px 27.1101px;
-  gap: 7.53px;
-  width: 177.22px;
-  height: 47.07px;
-  background: #32D94B;
-  border-radius: 70.7876px;
-  border: 1px solid #32D94B;
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: center !important;
+  align-items: center !important;
+  padding: 9.03671px 27.1101px !important;
+  gap: 7.53px !important;
+  width: 177.22px !important;
+  height: 47.07px !important;
+  background: #32D94B !important;
+  border-radius: 70.7876px !important;
+  border: 1px solid #32D94B !important;
 }
 .landing-tab{
-  background: rgba(101, 226, 101, 0.3);
-  border-radius: 50px;
-  padding: 15px 20px;
+  background: rgba(101, 226, 101, 0.3) !important;
+  border-radius: 50px !important;
+  padding: 15px 20px !important;
 }
 .single-tab{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 9px 25px;
-  width: 282px;
-  height: 47px;
-  background: #050A04;
-  border-radius: 81px;
-  word-wrap: normal;
+  display: flex  !important;
+  flex-direction: row !important;
+  justify-content: center!important;
+  align-items: center !important;
+  padding: 9px 25px !important;
+  width: 282px !important;
+  height: 47px !important;
+  
   font-family: 'Proxima Nova' !important;
-  font-style: normal;
-  font-weight: 600;
+  font-style: normal !important;
+  font-weight: 600 !important;
   font-size: 24px;
   line-height: 29px;
   text-align: center;
   text-decoration: none !important;
-
-  color: #FFFFFF;
+  color: #FFFFFF !important;
+}
+.single-tab:hover{
+  background: #050A04 !important;
+  border-radius: 81px!important ;
+  word-wrap: normal;
 }
 .landing-tab .MuiTabs-scroller.MuiTabs-fixed.css-jpln7h-MuiTabs-scroller{
   margin: 0px !important;
   text-decoration: none !important;
 }
 .landing-tab .MuiTabs-flexContainer.css-heg063-MuiTabs-flexContainer{
-  justify-content: space-around;
+  justify-content: space-around !important;
   text-decoration: none !important;
 }
 .landing-tab .MuiTabs-flexContainer.css-heg063-MuiTabs-flexContainer button{
-  width: 260px;
-  font-size: 16px;
-  background: transparent;
+  width: 260px !important;
+  font-size: 16px !important;
+  background: transparent !important;
   text-decoration: none !important;
   
 }
 .landing-tab .css-r9ef6q-MuiButtonBase-root-MuiTab-root.Mui-selected{
-  color: #fff;
-  background: #050A04;
+  color: #fff !important;
+  background: #050A04 !important;
 }
 .MuiButtonBase-root.MuiTab-root.MuiTab-textColorPrimary.Mui-selected.single-tab.css-r9ef6q-MuiButtonBase-root-MuiTab-root{
-  color: #fff;
-  background: #050A04;
+  color: #fff !important;
+  background: #050A04 !important;
 }
 .landing-tab .MuiTabs-flexContainer.css-heg063-MuiTabs-flexContainer button:hover{
-  color: #fff;
+  color: #fff !important;
   background: #050A04 !important;
   text-decoration: none !important;
 }
 .landing-tab .css-gen84r-MuiTabs-indicator{
-  display: none;
+  display: none !important;
 }
 .section-link{
-  color: #54CD0A;
-  text-decoration: underline;
-  font-size: 24px;
-  font-weight: 500;
+  color: #54CD0A !important;
+  text-decoration: underline !important;
+  font-size: 24px !important;
+  font-weight: 500 !important;
 }
 .section-link:hover{
-  color: #fff;
+  color: #fff !important;
 }
 .small-tittel{
   font-size: 28px !important;
-  color: #fff;
+  color: #fff !important;
 }
 .grid-card{
-  width: fit-content;
-  background: #000000;
-  border-radius: 27.3085px;
+  width: fit-content !important;
+  background: #000000 !important;
+  border-radius: 27.3085px !important;
 }
 .community-text{
-  display: flex;
-  align-items: center;
-  margin-left: 104px;
-  margin-top: 48px;
+  display: flex !important;
+  align-items: center !important;
+  margin-left: 104px !important;
+  margin-top: 48px !important;
 }
 .community-down{
-  justify-content: end;
+  justify-content: end !important;
 }
 .timer-section{
-  display: flex;
-  align-items: center;
+  display: flex !important;
+  align-items: center !important;
 }
 .timer-wrap{
-  display: flex;
-  align-items: center;
-  margin-bottom: 20px;
+  display: flex !important;
+  align-items: center !important;
+  margin-bottom: 20px !important;
 }
 .timer{
   width: 111px;
@@ -321,16 +323,16 @@ p{
   margin-right: 20px;
 }
 .community-bg{
-  background: url(/images/Discordicon.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: top center;
+  background: url(/images/Discordicon.png) !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-position: top center !important;
 }
 .timer-bg{
-  background: url(/images/Discordicon.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: top center;
+  background: url(/images/Discordicon.png) !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-position: top center !important;
 }
 .modalContainer-1 {
     
