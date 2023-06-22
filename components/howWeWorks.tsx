@@ -1,41 +1,40 @@
-"use client"
-
-import Image from 'next/image';
-import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
-const roadMap = require("./../public/images/roadmap.svg");
+import Box from "@mui/material/Box";
+import {CardMedia} from "@mui/material";
+import Container from "@mui/material/Container";
 
 export default function Working() {
 
-  return (
-    <>
-      <Grid container spacing={10} sx={{ mt: 8 }} item xs={12}>
-        <Typography
-          variant="h1"
-          gutterBottom
-          style={{
-            textAlign: "center",
-            width: "100%",
-            fontFamily: "ClashDisplay-Variable",
-            fontWeight: "600",
-            fontSize: "42px",
-            marginBottom: "40px",
-            marginTop: "40px",
-          }}
-        >
-          Our Roadmap
-        </Typography>
-      </Grid>
-      <div
-        className="image-container"
-        style={{ marginLeft: "-380px", position: "relative" }}
-      >
-         <Image
-      priority
-      src={roadMap}
-      alt="Follow us on Twitter"
-    />
-      </div>
-    </>
-  );
+    return (
+        <Box>
+            <Container>
+                <Typography
+                    variant="h3"
+                    align="center"
+                    sx={{
+                        fontFamily: "Clash Display",
+                        fontWeight: "600",
+                        mb: 4
+                    }}>
+                    Our Roadmap
+                </Typography>
+                <Box>
+                    <Box sx={{display: {xs: "block", lg: "none"}}}>
+                        <CardMedia
+                            component="img"
+                            sx={{width: "100%", objectFit: "contain"}}
+                            src="images/road-map.png"
+                        />
+                    </Box>
+                    <Box sx={{display: {xs: "none", lg: "block"}}}>
+                        <CardMedia
+                            component="img"
+                            sx={{width: "100%", objectFit: "contain"}}
+                            src="images/roadmap.png"
+                        />
+                    </Box>
+                </Box>
+            </Container>
+        </Box>
+    );
 }

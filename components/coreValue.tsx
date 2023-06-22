@@ -1,25 +1,40 @@
 "use client"
 
-import Grid from '@mui/material/Grid'
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
+import React from 'react';
+import {CardMedia} from "@mui/material";
+import Container from "@mui/material/Container";
 
-import { completeprofile, process, processCircle } from './assets';
-import { useState } from 'react';
-
-export default function CoreValue(){
-  
-    return(
-        <Grid container spacing={10} sx={{ mt: 8 }} item xs={12} className='w-100%'>
-       
-          <Typography variant="h1" gutterBottom style={{ textAlign: 'center', width: '100%', fontFamily: 'ClashDisplay-Variable', fontWeight: '600', fontSize: '42px', marginBottom: '40px', marginTop: '40px' }}>
-            Process
-            </Typography>
-            <div className='w-100% relative'>
-              
-              <img width={'100%'}  src='/images/process.png' alt='' />
-            </div>
-          
-        </Grid>
+export default function CoreValue() {
+    return (
+        <Box>
+            <Container>
+                <Typography
+                    align="center"
+                    variant="h3"
+                    sx={{fontFamily: 'Clash Display', fontWeight: 600, mb: 4}}>
+                    Process
+                </Typography>
+                <Box>
+                    <Box sx={{display: {xs: "none", lg: "block"}}}>
+                        <CardMedia
+                            alt="rewardBox"
+                            src="/images/process.png"
+                            sx={{objectFit: "contain"}}
+                            component="img"
+                        />
+                    </Box>
+                    <Box sx={{display: {xs: "block", lg: "none"}}}>
+                        <CardMedia
+                            alt="rewardBox"
+                            src="/images/public.png"
+                            sx={{objectFit: "contain"}}
+                            component="img"
+                        />
+                    </Box>
+                </Box>
+            </Container>
+        </Box>
     );
 }
