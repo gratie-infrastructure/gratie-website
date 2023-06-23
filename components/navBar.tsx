@@ -14,16 +14,19 @@ import {Stack} from "@mui/material";
 import NavLink from "@/components/navLink";
 // @ts-ignore
 import {Link as ScrollLink} from "react-scroll";
+import Link from "next/link";
 
 interface Page {
     label: string;
     path: string;
+    external: boolean;
 }
 
 const pages: Array<Page> = [
-    {label: "About", path: "about"},
-    {label: "Pricing", path: "pricing"},
-    {label: "Community", path: "community"},
+    {label: "About", path: "about", external: false},
+    {label: "Pricing", path: "pricing", external: false},
+    {label: "Community", path: "community", external: false},
+    {label: "Replace", path: "https://hayfordstanley.vercel.app", external: true},
 ];
 
 function ResponsiveAppBar() {
@@ -64,21 +67,29 @@ function ResponsiveAppBar() {
                                 open={Boolean(anchorElNav)}
                                 onClose={handleCloseNavMenu}
                                 sx={{display: {xs: "block", md: "none"},}}>
-                                {pages.map(({path, label}: Page) => (
-                                    <ScrollLink to={path} spy={true} smooth={true} offset={50} duration={500}>
-                                        <MenuItem
-                                            key={path}
-                                            onClick={handleCloseNavMenu}
-                                            sx={{pr: 10}}>
-                                            <Typography textAlign="center">{label}</Typography>
+                                {pages.map(({path, label, external}: Page) => (
+                                    external ?
+                                        <MenuItem key={path} sx={{pr: 10}}>
+                                            <Link style={{fontFamily: "DM Sans"}} href={path}>{label}</Link>
                                         </MenuItem>
-                                    </ScrollLink>
+                                        : (
+                                            <ScrollLink to={path} spy={true} smooth={true} offset={50} duration={500}>
+                                                <MenuItem
+                                                    key={path}
+                                                    onClick={handleCloseNavMenu}
+                                                    sx={{pr: 10}}>
+                                                    <Typography textAlign="center">{label}</Typography>
+                                                </MenuItem>
+                                            </ScrollLink>
+                                        )
                                 ))}
                             </Menu>
                         </Box>
                         <Stack sx={{display: {xs: "none", lg: "block"}}} direction="row" spacing={2}>
-                            {pages.map(({path, label}: Page) => (
-                                <NavLink path={path} label={label}/>
+                            {pages.map(({path, label, external}: Page) => (
+                                external ?
+                                    <Link style={{fontFamily: "DM Sans"}} href={path}>{label}</Link> :
+                                    <NavLink path={path} label={label}/>
                             ))}
                         </Stack>
                         <Button
