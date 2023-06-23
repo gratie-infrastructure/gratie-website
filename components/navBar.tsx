@@ -26,7 +26,7 @@ const pages: Array<Page> = [
     {label: "About", path: "about", external: false},
     {label: "Pricing", path: "pricing", external: false},
     {label: "Community", path: "community", external: false},
-    {label: "Replace", path: "https://hayfordstanley.vercel.app", external: true},
+    {label: "Lite Paper", path: "https://hayfordstanley.vercel.app", external: true},
 ];
 
 function ResponsiveAppBar() {
@@ -70,7 +70,8 @@ function ResponsiveAppBar() {
                                 {pages.map(({path, label, external}: Page) => (
                                     external ?
                                         <MenuItem key={path} sx={{pr: 10}}>
-                                            <Link style={{fontFamily: "DM Sans"}} href={path}>{label}</Link>
+                                            <Link target="_blank" style={{fontFamily: "DM Sans"}} href={path}>
+                                                {label}</Link>
                                         </MenuItem>
                                         : (
                                             <ScrollLink to={path} spy={true} smooth={true} offset={50} duration={500}>
@@ -88,7 +89,7 @@ function ResponsiveAppBar() {
                         <Stack sx={{display: {xs: "none", lg: "block"}}} direction="row" spacing={2}>
                             {pages.map(({path, label, external}: Page) => (
                                 external ?
-                                    <Link style={{fontFamily: "DM Sans"}} href={path}>{label}</Link> :
+                                    <Link  target="_blank" style={{fontFamily: "DM Sans"}} href={path}>{label}</Link> :
                                     <NavLink path={path} label={label}/>
                             ))}
                         </Stack>
