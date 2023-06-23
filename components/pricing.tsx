@@ -46,29 +46,31 @@ export default function Pricing() {
                         </Stack>
                     </Grid>
                     <Grid item={true} xs={12} md={6}>
-                        <Stack>
-                            <Stack direction="row" spacing={2}>
-                                <Button
-                                    sx={{color: "white", textTransform: "none"}}
-                                    size="large"
-                                    variant="text">
-                                    To join our community
-                                </Button>
-                                <Image
-                                    style={{objectFit: "contain"}}
-                                    src="/images/Discord icon.png"
-                                    alt="Discord icon"
-                                    height={50}
-                                    width={50}/>
-                            </Stack>
+                        <Stack direction="row" justifyContent="flex-end">
                             <Box>
-                                <Button
-                                    variant="contained"
-                                    color="secondary"
-                                    size="medium"
-                                    sx={{textTransform: "none", color: "white"}}>
-                                    Join us
-                                </Button>
+                                <Stack direction="row" spacing={2}>
+                                    <Button
+                                        sx={{color: "white", textTransform: "none"}}
+                                        size="large"
+                                        variant="text">
+                                        To join our community
+                                    </Button>
+                                    <Image
+                                        style={{objectFit: "contain"}}
+                                        src="/images/Discord icon.png"
+                                        alt="Discord icon"
+                                        height={60}
+                                        width={60}/>
+                                </Stack>
+                                <Box>
+                                    <Button
+                                        variant="contained"
+                                        color="secondary"
+                                        size="medium"
+                                        sx={{textTransform: "none", color: "white"}}>
+                                        Join us
+                                    </Button>
+                                </Box>
                             </Box>
                         </Stack>
                     </Grid>

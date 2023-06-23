@@ -24,14 +24,14 @@ const Pill = ({active, label, value, onClick}: PillProps) => {
             onClick={handleButtonClick}
             size={sm ? "small" : "large"}
             variant="text"
-            fullWidth={!sm}
+            fullWidth={true}
             sx={{
                 backgroundColor: active ? 'primary.main' : 'secondary.main',
-                textTransform: {xs: "uppercase", lg: "capitalize"},
-                borderRadius: sm && !active ? '100%' : 1,
+                textTransform: "capitalize",
+                borderRadius: 1,
                 color: "white"
             }}>
-            {sm && active ? label : sm && !active ? `${getInitials(label)}` : label}
+            {label}
         </Button>
     )
 }

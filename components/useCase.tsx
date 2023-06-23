@@ -7,31 +7,43 @@ import {useState} from 'react';
 import {nfts} from "@/utils/data";
 import NFT from "@/components/nft";
 import Container from "@mui/material/Container";
+import Button from "@mui/material/Button";
+import {ChevronRight} from "@mui/icons-material";
 
 export default function UseCase() {
     const [isFlipped, setIsFlipped] = useState(false);
     return (
-        <Container>
-            <Grid container spacing={1} sx={{mt: 18, mb: 18}}>
-                <Box display={'flex'} alignItems={'start'} justifyContent={'space-between'} width={'100%'}>
-                    <Typography variant="h5" className='small-tittel' gutterBottom>
-                        Find out more about buying NFT
-                    </Typography>
-                    <Typography variant="h5" style={{color: "#32D94B", cursor: "pointer"}} gutterBottom
+        <Box sx={{py: 8}}>
+            <Container>
+                <Grid container spacing={1}>
+                    <Grid container={true} alignItems={'center'} justifyContent={'space-between'} spacing={2}>
+                        <Grid item={true} xs={12} md="auto">
+                            <Typography variant="h5" sx={{color: "text.primary"}}>
+                                Find out more about buying NFT
+                            </Typography>
+                        </Grid>
+                        <Grid item={true} xs={12} md="auto">
+                            <Button
+                                color="secondary"
+                                endIcon={<ChevronRight color="secondary"/>}
+                                variant="text"
+                                sx={{cursor: "pointer", textTransform: "capitalize"}}
                                 onClick={() => setIsFlipped(!isFlipped)}>
-                        {isFlipped ? "see less" : "see all"}
-                    </Typography>
-                </Box>
-                <Grid container spacing={2} sx={{mt: 5}}>
-                    {nfts.map((nft, index) => {
-                        return (
-                            <Grid key={index} item={true} xs={12} md={4} lg={3}>
-                                <NFT nft={nft}/>
-                            </Grid>
-                        )
-                    })}
+                                {isFlipped ? "see less" : "see all"}
+                            </Button>
+                        </Grid>
+                    </Grid>
+                    <Grid container spacing={2} sx={{mt: 5}}>
+                        {nfts.map((nft, index) => {
+                            return (
+                                <Grid key={index} item={true} xs={12} md={4} lg={3}>
+                                    <NFT nft={nft}/>
+                                </Grid>
+                            )
+                        })}
+                    </Grid>
                 </Grid>
-            </Grid>
-        </Container>
+            </Container>
+        </Box>
     );
 }

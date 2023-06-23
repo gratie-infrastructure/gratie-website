@@ -1,4 +1,4 @@
-import {CardMedia, Stack, Box} from "@mui/material";
+import {CardMedia, Stack, Box, useMediaQuery, Theme} from "@mui/material";
 import React, {useState} from "react";
 import Pill from "@/components/pill";
 import Grid from "@mui/material/Grid";
@@ -10,14 +10,16 @@ const PillTab = () => {
         setActiveTab(tab);
     }
 
+    const sm = useMediaQuery((theme: Theme) => theme.breakpoints.down('sm'))
+
     return (
         <Box>
             <Stack
                 sx={{
-                    borderRadius: 1,
+                    borderRadius: {xs: 0.5, lg: 1},
                     backgroundColor: "secondary.main",
                     padding: 1
-                }} direction="row" alignItems="center">
+                }} direction={sm ? 'column': 'row'} alignItems="center">
                 <Pill
                     onClick={handleClick}
                     label="Reward Infrastructure"
